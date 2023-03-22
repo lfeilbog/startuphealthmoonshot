@@ -29,11 +29,14 @@ div.gallery {
   flex-direction: row;
   align-items: center;
 }
+.companies div a:hover {
+  border: none ;
+}
 #main a {
   color: inherit;
   font-weight: bold;
 }
-#main a:hover {
+a:hover {
   color: lightblue;
   border: 3px solid lightblue;
 }
@@ -154,35 +157,26 @@ div.companies{
 
 .companies{
   /* padding: 20px; */
-  display:grid;
+  /* display:grid;
   grid-template-columns: 2fr 2fr;
-  grid-template-rows: 2fr 2fr;
+  grid-template-rows: 2fr 2fr; */
+  display: flex;
   justify-content: space-around;
   align-items: center;
   justify-items: center;
-}
-.companies img:first-child {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row: 1/2;
-  width:auto;
-  height: 40px;
-}
-.companies img:nth-child(2) {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row: 1/2;
-  width: auto;
-  height: 50px;
-}
-.companies img:nth-child(3) {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row: 2/3;
-  width:150px;
-  height:auto;
+  flex-wrap: wrap;
 }
 
+.companies img{
+  width: 350px;
+}
+.companies img:hover{
+  border: 5px solid lightblue;
+  border-radius: 25px;
+}
+.companies div{
+  padding: 15px;
+}
 .company_info{
   display:grid;
   grid-template-rows: 1fr 1fr;
@@ -453,24 +447,7 @@ button.collapsible{
        h2#expers{
         font-size: 22px;
       }
-      .companies img:first-child {
-        width:auto;
-        height: 50px;
-      }
-      .companies img:nth-child(2) {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row: 1/2;
-        width: auto;
-        height: 60px;
-      }
-      .companies img:nth-child(3) {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row: 2/3;
-        width:160px;
-        height:auto;
-      }
+
 }
 
 @media screen and (min-width: 930px) {
@@ -482,32 +459,8 @@ button.collapsible{
     text-align: left;
     padding-bottom: 30px;
   }
-  .companies img:first-child {
-    width:auto;
-    height: 80px;
-  }
-  .companies img:nth-child(2) {
-    width: auto;
-    height: 90px;
-  }
-  .companies img:nth-child(3) {
 
-    width:190px;
-    height:auto;
-  }
   .meet p {
     font-size: 20px;
   }
 }
-
-
-
-
-
-  
-  
-
-
-
-
-
