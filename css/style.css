@@ -463,4 +463,10 @@ button.collapsible{
   .meet p {
     font-size: 20px;
   }
+  @media (prefers-reduced-motion: reduce){
+    .flip-card:hover .flip-card-inner{
+        transform: none;
+      } 
+    
+    }
 }
